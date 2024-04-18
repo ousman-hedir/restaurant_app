@@ -6,7 +6,7 @@ import { useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../container/Footer/Footer";
-// import { Id } from "../../convex/_generated/dataModel";
+
 
 function LogIn() {
 	const { isAuthenticated } = useConvexAuth();

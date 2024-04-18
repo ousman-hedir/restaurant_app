@@ -8,6 +8,7 @@
 	padding: 1.2rem 2rem;
 	position: fixed;
 	z-index: 1;
+	background-color: red !important;
 }
 
 .app__navbar-logo {

@@ -1,12 +1,6 @@
 import React from "react";
-import Img1 from "./promotions/promo1.jpg";
-import Img2 from "./promotions/promo2.jpg";
-import Img3 from "./promotions/promo3.jpg";
-import Img4 from "./promotions/promo4.jpg";
-import Img5 from "./promotions/promo5.jpg";
-import Img6 from "./promotions/promo6.jpg";
-import "./promotion.css";
 import { FaGlassCheers, FaThumbsUp } from "react-icons/fa";
+import "./promotion.css";
 
 function Promotion() {
 	return (
@@ -67,32 +61,32 @@ function Promotion() {
 
 const promotions = [
 	{
-		img: Img1,
+		img: "s/promo1.jpg",
 		title: "Special Breakfast",
 		price: 15,
 	},
 	{
-		img: Img2,
+		img: "/promo2.jpg",
 		title: "Special Lunch",
 		price: 25,
 	},
 	{
-		img: Img3,
+		img: "/promotions/promo3.jpg",
 		title: "Special Dinner",
 		price: 35,
 	},
 	{
-		img: Img4,
+		img: "/promo4.jpg",
 		title: "Special Dinner",
 		price: 35,
 	},
 	{
-		img: Img5,
+		img: "/promo5.jpg",
 		title: "Special Dinner",
 		price: 35,
 	},
 	{
-		img: Img6,
+		img: "/promo6.jpg",
 		title: "Special Dinner",
 		price: 35,
 	},

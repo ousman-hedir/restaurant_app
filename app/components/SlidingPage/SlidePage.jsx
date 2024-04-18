@@ -4,10 +4,8 @@ import { FaAngleLeft, FaAngleRight, FaUtensils } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SlidePage.css";
-import Img1 from "./slider/slide_1.jpg";
-import Img2 from "./slider/slide_2.jpg";
-import Img3 from "./slider/slide_3.jpg";
-import Img4 from "./slider/slide_4.jpg";
+import Image from "next/image";
+
 
 export default function SlidePage() {
 	const CustomPrevArrow = (props) => {
@@ -37,7 +35,7 @@ export default function SlidePage() {
 		<div className="slide-container hidden md:block">
 			<Slider {...settings}>
 				<div className="slide-item">
-					<img src={Img1} alt="Slide 1" />
+					<Image src="/slide_1.jpg" alt="Slide 1" />
 					<div className="text-overlay">
 						<h2 className="text-3xl font-bold mb-4">Delicious Food</h2>
 						<p className="text-lg text-gray-800">
@@ -51,7 +49,7 @@ export default function SlidePage() {
 					</div>
 				</div>
 				<div className="slide-item">
-					<img src={Img2} alt="Slide 2" />
+					<Image src="/slide_2.jpg" alt="Slide 2" />
 					<div className="text-overlay">
 						<h2 className="text-3xl font-bold mb-4">
 							Exquisite Dining Experience
@@ -67,7 +65,7 @@ export default function SlidePage() {
 					</div>
 				</div>
 				<div className="slide-item">
-					<img src={Img3} alt="Slide 3" />
+					<Image src="/slide_3.jpg" alt="Slide 3" />
 					<div className="text-overlay">
 						<h2 className="text-3xl font-bold mb-4">Special Events Catering</h2>
 						<p className="text-lg ">
@@ -81,7 +79,7 @@ export default function SlidePage() {
 					</div>
 				</div>
 				<div className="slide-item">
-					<img src={Img4} alt="Slide 4" />
+					<Image src="/slide_4.jpg" alt="Slide 4" />
 					<div className="text-overlay">
 						<h2 className="text-3xl font-bold mb-4">Relaxing Ambiance</h2>
 						<p className="text-lg text-gray-800">

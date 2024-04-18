@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import images from "../../constants/images";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -13,35 +14,33 @@ const Navbar = () => {
 	return (
 		<nav className="app__navbar">
 			<div className="app__navbar-logo">
-				<img src={images.gericht} alt="app__logo" />
+				<Image src="/gericht.png" alt="app__logo" width={100} height={100} />
 			</div>
 			<ul className="app__navbar-links">
 				<li className="p__opensans">
-					<Link to="/">Home</Link>
+					<Link href="/">Home</Link>
 				</li>
 				<li className="p__opensans">
-					<Link to="/about">About</Link>
+					<Link href="/about">About</Link>
 				</li>
 				<li className="p__opensans">
-					<Link to="/menu">Menu</Link>
+					<Link href="/menu">Menu</Link>
 				</li>
 				<li>
-					<Link to="/order" className="p__opensans">
+					<Link href="/order" className="p__opensans">
 						Order Us
 					</Link>
 				</li>
 				<li className="p__opensans">
-					<Link to="/awards">Awards</Link>
+					<Link href="/awards">Awards</Link>
 				</li>
 				<li className="p__opensans">
-					<Link to="/contact">Contact</Link>
+					<Link href="/contact">Contact</Link>
 				</li>
 			</ul>
 			<div className="app__navbar-login">
-				<span className="p__opensans">
-					Well Come 
-				</span>
-				{/* <Link to="/login" className="p__opensans">
+				<span className="p__opensans">Well Come</span>
+				{/* <Link href="/login" className="p__opensans">
 					<button className="bg-[blue] px-4 py-2 rounded-lg hover:bg-[orange]">
 						<Authenticated>Log in</Authenticated>
 						<Unauthenticated>Log out</Unauthenticated>
@@ -66,27 +65,27 @@ const Navbar = () => {
 						/>
 						<ul className="app__navbar-smallscreen_links">
 							<li>
-								<Link to="/" onClick={() => setToggleMenu(false)}>
+								<Link href="/" onClick={() => setToggleMenu(false)}>
 									Home
 								</Link>
 							</li>
 							<li>
-								<Link to="/about" onClick={() => setToggleMenu(false)}>
+								<Link href="/about" onClick={() => setToggleMenu(false)}>
 									About
 								</Link>
 							</li>
 							<li>
-								<Link to="/menu" onClick={() => setToggleMenu(false)}>
+								<Link href="/menu" onClick={() => setToggleMenu(false)}>
 									Menu
 								</Link>
 							</li>
 							<li>
-								<Link to="/awards" onClick={() => setToggleMenu(false)}>
+								<Link href="/awards" onClick={() => setToggleMenu(false)}>
 									Awards
 								</Link>
 							</li>
 							<li>
-								<Link to="/contact" onClick={() => setToggleMenu(false)}>
+								<Link href="/contact" onClick={() => setToggleMenu(false)}>
 									Contact
 								</Link>
 							</li>
